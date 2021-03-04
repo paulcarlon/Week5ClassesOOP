@@ -92,7 +92,7 @@ class Menu {
         'Artist: ' + this.selectedArtist.artist + '\n' + 'Songs: ' + '\n';
 
       for (let i = 0; i < this.selectedArtist.songs.length; i++) {
-        description += this.selectedArtist.songs[i] + '\n';
+        description += i + '| ' + this.selectedArtist.songs[i] + '\n';
       }
 
       let selection = this.showArtistMenuOptions(description);
