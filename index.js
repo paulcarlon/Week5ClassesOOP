@@ -90,7 +90,7 @@ class Menu {
       this.selectedArtist = this.artists[index];
       let description =
         'Artist: ' + this.selectedArtist.artist + '\n' + 'Songs: ' + '\n';
-
+      // We use if statements in this case to make sure the user enters a valid response
       for (let i = 0; i < this.selectedArtist.songs.length; i++) {
         description += i + '| ' + this.selectedArtist.songs[i] + '\n';
       }
